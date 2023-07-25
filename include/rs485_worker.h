@@ -20,8 +20,8 @@ public:
                 uint8_t send_data[1] = {m_kill_switch->read() << 1 | m_mission_switch->read()};
                 m_rs_control->transmit(0, send_data, 1);
             }
+            ThisThread::yield();
         }
-        ThisThread::yield();
     }
 
 private:

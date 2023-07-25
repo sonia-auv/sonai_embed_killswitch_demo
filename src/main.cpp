@@ -2,7 +2,7 @@
 #include "pin_def.h"
 
 #include "can_control.h"
-#include "rs485_control.h"
+#include "RS485_control.h"
 
 #include "can_worker.h"
 #include "rs485_worker.h"
